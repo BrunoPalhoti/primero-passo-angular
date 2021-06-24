@@ -1,0 +1,9 @@
+<p>primeiro works!</p>
+{{nome}} <!--Interpulação-->
+<p [innerHtml]="nome"></p> <!--Property Binding-->
+
+<input type="text" #texto [(ngModel)]="nome">
+<!--<input type="text" (keyup)="mostrarMensagem(texto.value)" #texto> -->
+<!--<input type="text" (change)="mostrarMensagem(texto.value)" #texto> -->
+
+<button (click)="mostrarMensagem(texto.value)">Clique aqui</button> <!--Event Binding-->
